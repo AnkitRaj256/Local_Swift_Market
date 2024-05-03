@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style2.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+
+<header>
+   <!-- header inner -->
+   <div class="header">
+      
+      <div class="header_bottom">
+         <div class="container">
+            <div class="xyx">
+               <div class="abc">
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item active">
+                              <a class="nav-link active" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="about.html">About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="products.html">Products</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="fashion.html">Fashion</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="news.html">Updates</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contact-Us</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-md-4">
+                  <div class="search">
+                     <form action="/">
+                        <input class="form_sea" type="text" placeholder="Search" name="search">
+                        
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="prj">
+            <div class="box">
+              <div class="cart-count">0</div>
+              <ion-icon name="cart" id="cart-icon"></ion-icon>
+            </div>
+          
+            <div class="cart">
+              <div class="cart-title">Cart Items</div>
+              <div class="cart-content"></div>
+              
+              <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs.0</div>
+              </div>
+          
+              <button class="btn-buy" id="place-order-button">Place Order</button>
+          
+              <ion-icon name="close" id="cart-close"></ion-icon>
+            </div>
+          </div>
+          
+          <script>
+            // Add a click event listener to the "Place Order" button
+            document.getElementById("place-order-button").addEventListener("click", function() {
+              // Redirect to the new HTML page
+              window.location.href = "order_form.html";
+            });
+          </script>
+          
+      </div>
+   </div>
+</header>
+  <div class="container" style="">
+    <!-- <h2 class="title">Discover the Best Products</h2> -->
+    <div class="shop-content">
+
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="images/1.png" class="food-img"  >
+        </div>
+        <h2 class="food-title">Kellogg's Corn Flakes</h2>
+        <span class="food-price">Rs.195</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="images/2.png" class="food-img"></div>
+        <h2 class="food-title">Surf Excel Easy Wash</h2>
+        <span class="food-price">Rs.112</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="Images\3.png" class="food-img"></div>
+        <h2 class="food-title">Maggi</h2>
+        <span class="food-price">Rs.12</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="Images\4.png" class="food-img"></div>
+        <h2 class="food-title">Tresemme Shampoo</h2>
+        <span class="food-price">Rs.343</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+  
+      <div class="food-box">
+        <div class="pic"><img src="Images\5.png" class="food-img"></div>
+        <h2 class="food-title">Kurkure/Lays/Doritoz/Bingo</h2>
+        <span class="food-price">Rs.10</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="Images\6.png" class="food-img"></div>
+        <h2 class="food-title">Soft Drinks</h2>
+        <span class="food-price">Rs.20</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="Images\7.png" class="food-img"></div>
+        <h2 class="food-title">Haldiram's Navrattan Mixture</h2>
+        <span class="food-price">Rs.120</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Images\8.png" class="food-img"></div>
+        <h2 class="food-title">Dairy Milk Silk</h2>
+        <span class="food-price">Rs.80</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Images\9.png" class="food-img"></div>
+        <h2 class="food-title">Pharmacy</h2>
+        <span class="food-price">Rs.XX</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Images\10.png" class="food-img"></div>
+        <h2 class="food-title">Dry Fruits</h2>
+        <span class="food-price">Rs.1000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Images\11.png" class="food-img"></div>
+        <h2 class="food-title">Dove Soap</h2>
+        <span class="food-price">Rs.193</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Images\12.png" class="food-img"></div>
+        <h2 class="food-title">Lifebuoy Handwash</h2>
+        <span class="food-price">Rs.95</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/13.jpg" class="food-img"></div>
+        <h2 class="food-title">Nescafe coffee</h2>
+        <span class="food-price">Rs.170</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/14.jpg" class="food-img"></div>
+        <h2 class="food-title">Tata Tea</h2>
+        <span class="food-price">Rs.250</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/15.jpg" class="food-img"></div>
+        <h2 class="food-title">Amul Milk</h2>
+        <span class="food-price">Rs.32</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/16.jpg" class="food-img"></div>
+        <h2 class="food-title">Kissan Ketchup</h2>
+        <span class="food-price">Rs.80</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/17.png" class="food-img"></div>
+        <h2 class="food-title">Real Mixed Fruit Juice</h2>
+        <span class="food-price">Rs.182</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/18.jpg" class="food-img"></div>
+        <h2 class="food-title">Dettol Liquid</h2>
+        <span class="food-price">Rs.150</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/19.png" class="food-img"></div>
+        <h2 class="food-title">Vim Dish Washer</h2>
+        <span class="food-price">Rs.45</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/20.jpg" class="food-img"></div>
+        <h2 class="food-title">Unibic Cookies</h2>
+        <span class="food-price">Rs.126</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/21.png" class="food-img"></div>
+        <h2 class="food-title">Himalaya Neem Facewash</h2>
+        <span class="food-price">Rs.205</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/22.png" class="food-img"></div>
+        <h2 class="food-title">Classmate Notebook</h2>
+        <span class="food-price">Rs.100</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/23.jpg" class="food-img"></div>
+        <h2 class="food-title">Dome's Color Pencil</h2>
+        <span class="food-price">Rs.115</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/24.jpg" class="food-img"></div>
+        <h2 class="food-title">Dabur Honey</h2>
+        <span class="food-price">Rs.359</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/25.png" class="food-img"></div>
+        <h2 class="food-title">Saffola Masala Oats</h2>
+        <span class="food-price">Rs.202</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/26.jpg" class="food-img"></div>
+        <h2 class="food-title">Closeup Toothpaste</h2>
+        <span class="food-price">Rs.216</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/27.png" class="food-img"></div>
+        <h2 class="food-title">Lotus Sunscream</h2>
+        <span class="food-price">Rs.336</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="images/mix3.png" class="food-img"></div>
+        <h2 class="food-title">Trimmer</h2>
+        <span class="food-price">Rs.1000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+
+
+
+
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

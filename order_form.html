@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <link rel="stylesheet" type="text/css" href="stylesO.css">
+    <link rel="stylesheet" href="stylesO.css">
+</head>
+<body>
+    <div class="order-form">
+        <h2><b>Fill out your details and select a payment gateway</b></h2>
+        <form action="submit_order.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br>
+            
+            <label for="pin">PIN:</label>
+            <input type="text" id="pin" name="pin" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required><br>
+
+            <label for="billing-address">Billing Address:</label>
+            <textarea id="billing-address" name="billing-address" required></textarea><br>
+
+            <input type="checkbox" id="same-address" name="same-address">
+            <label for="same-address">Shipping Address Same as Billing Address</label>
+
+            <div id="shipping-address-div" style="display: none;">
+                <label for="shipping-address">Shipping Address:</label>
+                <textarea id="shipping-address" name="shipping-address" required></textarea><br>
+            </div>
+
+            <label for="special-instructions">Special Instructions:</label>
+            <textarea id="special-instructions" name="special-instructions"></textarea><br>
+
+            <label for="payment">Select Payment Gateway:</label>
+            <select id="payment" name="payment" required>
+                <option value="paypal">PayPal</option>
+                <option value="creditcard">Credit Card</option>
+                <option value="banktransfer">Bank Transfer</option>
+            </select><br>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <script>
+        const sameAddressCheckbox = document.getElementById('same-address');
+        const shippingAddressDiv = document.getElementById('shipping-address-div');
+
+        sameAddressCheckbox.addEventListener('change', function () {
+            if (sameAddressCheckbox.checked) {
+                shippingAddressDiv.style.display = 'none';
+            } else {
+                shippingAddressDiv.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
